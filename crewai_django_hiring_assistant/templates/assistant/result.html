@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ record.job_title }} · HirePilot AI{% endblock %}
+{% block content %}
+<div class="section-heading"><div><div class="eyebrow">GENERATION COMPLETE</div><h1>{{ record.job_title }}</h1><p class="muted">{{ record.experience_level }} · Created {{ record.created_at|date:"d M Y, H:i" }}</p></div><a class="button secondary" href="{% url 'dashboard' %}">← Dashboard</a></div>
+<div class="result-grid">
+<section class="panel result-panel"><div class="result-label">01 · JOB DESCRIPTION</div><pre>{{ record.job_description }}</pre></section>
+<section class="panel result-panel"><div class="result-label">02 · TECHNICAL INTERVIEW QUESTIONS</div><pre>{{ record.technical_questions }}</pre></section>
+<section class="panel result-panel"><div class="result-label">03 · HR INTERVIEW QUESTIONS</div><pre>{{ record.hr_questions }}</pre></section>
+</div>
+{% endblock %}

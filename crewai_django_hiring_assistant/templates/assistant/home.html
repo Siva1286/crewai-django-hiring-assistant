@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}HirePilot AI — Hiring Assistant{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="eyebrow">CREWAI-POWERED RECRUITMENT WORKFLOW</div>
+  <h1>Build better hiring<br><span>conversations.</span></h1>
+  <p>Generate structured job descriptions and role-specific interview questions with a team of specialized AI agents.</p>
+  <div class="hero-actions"><a class="button primary" href="{% url 'register' %}">Create free account</a><a class="button secondary" href="{% url 'login' %}">Sign in</a></div>
+  <div class="hero-note">Local AI inference with Ollama · Your generated records stay in your Django database</div>
+</section>
+<section class="feature-grid">
+  <article class="feature"><div class="feature-icon">✦</div><h3>Job descriptions</h3><p>Create clear role summaries, responsibilities, and skill requirements.</p></article>
+  <article class="feature"><div class="feature-icon">⌘</div><h3>Technical interviews</h3><p>Prepare practical questions with concise answer guidance.</p></article>
+  <article class="feature"><div class="feature-icon">◎</div><h3>HR interviews</h3><p>Build fair behavioral question sets matched to seniority.</p></article>
+</section>
+{% endblock %}

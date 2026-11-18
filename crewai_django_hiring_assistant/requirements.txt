@@ -1,0 +1,4 @@
+Django==5.2.8
+crewai==1.5.0
+python-dotenv==1.2.1
+litellm==1.80.10
